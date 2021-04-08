@@ -166,6 +166,8 @@ if [[ "$(uname -s | grep -i -c darwin)" -ne 0 ]]; then
     HOST_TAG=darwin-x86_64
 elif [[ "$(uname -s | grep -i -c linux)" -ne 0 ]]; then
     HOST_TAG=linux-x86_64
+elif [[ "$(uname -s | grep -i -c cygwin)" -ne 0 ]]; then
+    HOST_TAG=windows-x86_64
 else
     echo "ERROR: Unknown host"
     [ "$0" = "${BASH_SOURCE[0]}" ] && exit 1 || return 1

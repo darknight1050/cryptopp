@@ -19,6 +19,8 @@ cryptopp-test.exe
 cryptopp-test.s
 cryptopp.mac.done
 GNUmakefile.deps
+cpu-features.c
+cpu-features.h
 
 ##############
 ## Patch files
