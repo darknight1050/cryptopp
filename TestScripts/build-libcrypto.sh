@@ -9,6 +9,10 @@ else
 	JOBS=2
 fi
 
+export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/linux-x86_64
+export ANDROID_NDK_ROOT=$NDK
+export ANDROID_SDK_ROOT=/usr/lib/android-sdk
+export PATH=$TOOLCHAIN/bin:$PATH
 export ANDROID_API=28
 export ANDROID_ABI=23
 export ANDROID_CPU=arm64-v8a
